@@ -1,0 +1,92 @@
+<!doctype HTML>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel = "stylesheet" type = "text/css" href = "index.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">   
+    <title>Crypto Coffee</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway&display=swap" rel="stylesheet">
+</head>
+<body onload="getCoffeePrices()">
+    <div class="bg">
+        <div class="container">
+            <div class="toast_container">
+            <div id="error_toast" class="toast" data-animation="true" data-delay="3000" data-autohide="true" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-body">
+                    Please select an amount to send and/or enter a valid address!              
+                </div>
+            </div>
+            <div id="bitcoin_toast" class="toast" data-animation="true" data-delay="3000" data-autohide="true" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-body">
+                    Bitcoin support coming soon!              
+                </div>
+            </div>  
+            <div id="sending_toast" class="toast" data-animation="true" data-delay="3000" data-autohide="true" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-body">
+                    Sending...              
+                </div>
+            </div>  
+        </div>      
+            <h1> Crypto Coffee Cup </h1>
+            <br>
+            <p>Buy someone a cup of coffee! Send them crypto worth the price of a cup. </p>
+
+            <div class="icon-container">
+                <i class="fab fa-ethereum"></i>
+                <i class="fab fa-bitcoin greyout" onclick="comingSoon()"></i>
+            </div>
+
+            <div class="card-deck">
+
+            <div id="sm" class="card" style="width: 18rem;"  onclick="selectSize(event)">
+                <div class="card-body">
+                  <h5 class="card-title">Just A Sip</h5>
+                  <p class="card-text oz_text">12 oz.</p>
+                  <p class="card-text" id="price_sm"><span id="usd_sm"></span><span id="crypto_sm"></span><span class="crypto"></span></p>
+                </div>
+              </div>
+              <div id="md" class="card " style="width: 18rem;"  onclick="selectSize(event)"> 
+                <div class="card-body">
+                  <h5 class="card-title">Standard Cup</h5>
+                  <p class="card-text oz_text">16 oz.</p>
+                  <p class="card-text" id="price_md"><span id="usd_md"></span><span id="crypto_md"></span><span class="crypto"></span></p>
+
+                </div>
+              </div>
+              <div id="lg" class="card" style="width: 18rem;"  onclick="selectSize(event)">
+                <div class="card-body">
+                  <h5 class="card-title">One Of Those Days</h5>
+                  <p class="card-text oz_text">20 oz.</p>
+                  <p class="card-text" id="price_lg"><span id="usd_lg"></span><span id="crypto_lg"></span><span class="crypto"></span></p>
+
+                </div>
+              </div>
+            </div>
+            <br><br>
+            <div class="form_container">
+                <p>SEND</p>
+                <h4><span id="amount">0</span><span class="crypto"></span></h4>
+                <br>
+                <p>TO</p>
+                <input type="text" class="form-control form-control-lg col-lg-6" id="recipient" placeholder="Enter Recipient Address">
+                <div class="icon-container">
+                    <i id="submit" class="fas fa-mug-hot" onclick="submit()"></i>
+                </div>
+            </div>
+           
+            <br><br>
+
+        </div>
+        <p> developed by <a target="_blank" href="https://www.linkedin.com/in/michaelsong3/">mike song</a>. view project on <a target="_blank" href="https://www.linkedin.com/in/michaelsong3/">github</a>. </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script  src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>

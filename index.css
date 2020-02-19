@@ -1,0 +1,147 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url("background.jpeg");
+    
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+.container {
+    padding-left: 50px;
+    padding-right:50px;
+    padding-top:50px;
+}
+
+
+h1, h5, h3 {
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    text-align:center;
+}
+
+p,h4 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-align:center;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  a {
+     color:white !important;
+    text-decoration:underline;
+  }
+  a:hover{
+    color:lightblue !important;
+ }
+
+  .toast {
+    background-color: rgba(48, 48, 48, 0.4) !important;
+    position: absolute; 
+    top: 10px; 
+    left: 10px;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+
+  }
+
+.icon-container {
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    padding-top: 25px;
+    padding-bottom:25px;
+}
+i {
+    font-size:2em;
+    filter: invert(1);
+    text-align:center;  
+    margin: 0 auto;
+    display:block;
+    margin-left: 10px;
+    margin-right:10px;
+    transition: transform .2s; /* Animation */
+}
+
+i:hover{
+    cursor:pointer;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+
+.form_container {
+    padding-top:25px;
+    padding-bottom:25px;
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    background-color: rgba(48, 48, 48, 0.4); 
+}
+
+input {
+    margin: 0 auto;
+    display:block;
+    background-color: rgba(48, 48, 48, 0) !important;
+    border-color:rgba(48, 48, 48, 0) !important;
+    color: #fff !important;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.greyout {
+    color:darkgrey;
+}
+
+.card{
+    background-color: rgba(48, 48, 48, 0.4);
+    transition: transform .2s; /* Animation */
+}
+
+.card:hover{
+    cursor:pointer;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.65) !important;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.65) !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.65) !important;
+}
