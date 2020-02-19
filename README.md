@@ -2,7 +2,7 @@
 
 ## About
 
-Buy someone a cup of coffee with crypto! Simply choose the cup size and enter in the address you want to send it to.
+Buy someone a cup of coffee with crypto! Simply choose the cup size and enter in the address you want to send it to. Currently support Ethererum on Kovan testnet.
 
 ## How It Works
 
